@@ -1,0 +1,23 @@
+.grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+}
+.item {
+      flex: 0 0 calc((100% - 60px) / 4);
+      box-sizing: border-box;
+      border: 2px solid #333;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 10px;
+}
+
+
+.form {
+      
+}
+.form-headline {}
+.form-table {}
+.form-button {}
+.form-help {}
