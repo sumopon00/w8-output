@@ -1,8 +1,9 @@
-.grid {
+/* .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
+      margin: 30px;
 }
 .item {
       flex: 0 0 calc((100% - 60px) / 4);
@@ -11,13 +12,102 @@
       padding: 20px 0;
       text-align: center;
       border-radius: 10px;
+} */
+.grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin:50px 20px;
+}
+.item {
+      box-sizing: border-box;
+      border: 0;
+      padding: 20px 0;
+      text-align: center;
+      border-radius: 10px;
+}
+.grid-4-4 {
+      background-color: #4e0101;
+}
+.grid-4-4 .item {
+      flex: 0 0 calc((100% - 60px) / 4);
+      background-color: #ffafaf;
+}
+.grid-2-2 {
+      background-color: hsl(226, 100%, 50%);
+}
+.grid-2-2 .item {
+      flex: 0 0 calc((100% - 20px) / 2);
+      background-color: hsl(226, 100%, 82%);
+}
+.grid-6-1 {
+      flex-wrap: nowrap;
+      background-color: #005d1a;
+}
+.grid-6-1 .item {
+      flex: 1;
+      background-color: #b7ffcb;
 }
 
 
+.form-wrapper {
+      background-color: #1F2A37;
+      padding: 20px;
+      max-width: 400px;
+      margin: 0 auto;
+}
 .form {
-      
+      width: 320px;
+      margin: 0 auto;
 }
-.form-headline {}
-.form-table {}
-.form-button {}
-.form-help {}
+.form-headline {
+      text-align: left;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+}
+.form-table {
+      margin: 0 auto;
+      width: 100%;
+}
+.form-email, .form-password {
+      margin-bottom: 20px;
+}
+.form-label {
+      color: #fff;
+      cursor: pointer;
+}
+.input, .button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 6px;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+}
+.input {
+      margin: 5px 0 0;
+      background-color: #374151;
+      border-color: #fff;
+      border: 1px solid #4B5563;
+      color: #dcdcdc;
+}
+.button {
+      background-color: #2563EB;
+      border: 0;
+      padding: 7px;
+}
+.button:hover {
+      background-color: #2563EB;
+      opacity: 0.8;
+}
+.form-help {
+      font-size: 15px;
+      color: #ffffffa0;
+}
+.form-help > a {
+      color: #2563EB;
+      text-decoration: none;
+      cursor: pointer;
+}

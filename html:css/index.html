@@ -10,44 +10,71 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-      <section class="grid">
-            <div class="item">01</div>
-            <div class="item">02</div>
-            <div class="item">03</div>
-            <div class="item">04</div>
-            <div class="item">05</div>
-            <div class="item">06</div>
-            <div class="item">07</div>
-            <div class="item">08</div>
-            <div class="item">09</div>
-            <div class="item">10</div>
-            <div class="item">11</div>
-            <div class="item">12</div>
-            <div class="item">13</div>
-            <div class="item">14</div>
-            <div class="item">15</div>
-            <div class="item">16</div>
+      <section>
+            <div class="grid grid-4-4">
+                  <div class="item">01</div>
+                  <div class="item">02</div>
+                  <div class="item">03</div>
+                  <div class="item">04</div>
+                  <div class="item">05</div>
+                  <div class="item">06</div>
+                  <div class="item">07</div>
+                  <div class="item">08</div>
+                  <div class="item">09</div>
+                  <div class="item">10</div>
+                  <div class="item">11</div>
+                  <div class="item">12</div>
+                  <div class="item">13</div>
+                  <div class="item">14</div>
+                  <div class="item">15</div>
+                  <div class="item">16</div>
+            </div>
+
+            <div class="grid grid-2-2">
+                  <div class="item">01</div>
+                  <div class="item">02</div>
+                  <div class="item">03</div>
+                  <div class="item">04</div>
+            </div>
+
+            <div class="grid grid-6-1">
+                  <div class="item">01</div>
+                  <div class="item">02</div>
+                  <div class="item">03</div>
+                  <div class="item">04</div>
+                  <div class="item">05</div>
+                  <div class="item">06</div>
+            </div>
       </section>
 
-      <form action="" class="form">
-            <div class="form-headline">Sign in to your account</div>
-            <table class="form-table">
-                  <tr>
-                        <th>your email</th>
-                        <td>
-                              <input type="email">
-                        </td>
-                  </tr>
-                  <tr>
-                        <th>Password</th>
-                        <td>
-                              <input type="password">
-                        </td>
-                  </tr>
-            </table>
-            <button type="submit" class="form-button">Sign in</button>
-            <p class="form-help">Don't have an account yet? <a href="">Sign up</a></p>
-      </form>
+      <div class="form-wrapper">
+            
+            <form id="js-form" class="form">
 
+                  <p class="form-headline">Sign in to your account</p>
+
+                  <div class="form-table">
+                        <div class="form-email">
+                              <label class="form-label" for="js-email">your email</label>
+                              <input id="js-email" class="input" type="email">
+                        </div>
+                        <div class="form-password">
+                              <label class="form-label" for="js-password">Password</label>
+                              <input id="js-password" class="input" type="password">
+                        </div>
+                        </tr>
+                  </div>
+
+                  <div>
+                        <button class="button" type="submit">Sign in</button>
+                  </div>
+                  
+                  <p class="form-help">Don't have an account yet? <a href="">Sign up</a></p>
+            </form>
+
+      </div>
+
+
+      <script src="./save.js"></script>
 </body>
 </html>
