@@ -20,7 +20,7 @@
                   email: emailInput.value,
                   password: passwordInput.value
             };
-            
+
             const stringifiedData = JSON.stringify(userData);
 
             localStorage.setItem(STORAGE_KEY, stringifiedData);
